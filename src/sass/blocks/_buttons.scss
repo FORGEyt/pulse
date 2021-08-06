@@ -1,0 +1,24 @@
+.button{
+    width: 153px;
+    height: 32px;
+    background: $main-color;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4px;
+    //текст
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover{
+        color:#fff;
+        text-decoration: none;
+    }
+    &_main{
+        width: 303px;
+        height: 54px;
+        margin-top: 67px;
+        //текст
+        font-size: 16px;
+    }
+}
