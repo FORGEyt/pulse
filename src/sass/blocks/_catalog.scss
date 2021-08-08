@@ -1,0 +1,102 @@
+.catalog{
+    padding-bottom: 100px;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab{
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        transform: skewX(-25deg);
+        margin: 0 9px;
+        // текст
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 48px;
+        text-align: center;
+        color: #6B6B6B;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover{
+            box-shadow: 3px 3px 20px $main-color;
+            border:none;
+        }
+        div{
+            transform: skewX(25deg);
+        }
+       &_active{
+        color:#fff;
+        background-color: $main-color;
+        border: none;
+       }
+    }
+    &__content{
+        margin-top: 60px;
+    }
+    &-item{
+        width: 303px;
+        min-height: 442px;
+        border: 2px solid #e8e8e8;
+        padding: 20px 20px 26px 20px;
+        &__img{
+            display: block;
+            margin: 0px auto;
+            height: 200px;
+            max-width: 100%;
+        }
+        &__subtitle{
+            padding-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+        }
+        &__descr{
+            margin-top: 16px;
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+        }
+        &__link{
+            display: block;
+            text-align: center;
+            margin-top: 17px;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: underline;
+            color: $main-color;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        hr{
+            width: 263px;
+
+            border-bottom: none;
+            margin-top: 19px;
+            margin-bottom: 21px;
+            background: #E8E8E8;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price{
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__price{
+            font-weight: bold;
+            font-size: 20px;
+            color: #050505;
+        }
+    }
+}
