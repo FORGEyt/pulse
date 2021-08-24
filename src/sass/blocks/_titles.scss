@@ -1,12 +1,12 @@
-.title{
+.title {
+    color: #0d0d0d;
     font-size: 30px;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
-    color: #000;
-    &_left{
+    text-transform: uppercase;
+    &_left {
+        color: #fff;
         font-size: 36px;
         text-align: left;
-        color: #fff;
     }
 }
